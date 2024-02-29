@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/MicroserviceExam2024-main.iml" filepath="$PROJECT_DIR$/.idea/MicroserviceExam2024-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/children-service/children-service.iml" filepath="$PROJECT_DIR$/backend/children-service/children-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/backend/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/feedback-service/feedback-service.iml" filepath="$PROJECT_DIR$/backend/feedback-service/feedback-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/gateway/gateway.iml" filepath="$PROJECT_DIR$/backend/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/parent-service/parent-service.iml" filepath="$PROJECT_DIR$/backend/parent-service/parent-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/user-management/users-management.iml" filepath="$PROJECT_DIR$/backend/user-management/users-management.iml" />
+    </modules>
+  </component>
+</project>

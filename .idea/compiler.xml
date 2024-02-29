@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="users-management" />
+        <module name="feedback-service" />
+        <module name="eureka-server" />
+        <module name="gateway" />
+        <module name="parent-service" />
+        <module name="children-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="children-service" target="17" />
+      <module name="eureka-server" target="17" />
+      <module name="feedback-service" target="17" />
+      <module name="gateway" target="17" />
+      <module name="parent-service" target="17" />
+      <module name="users-management" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="children-service" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="feedback-service" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="parent-service" options="-parameters" />
+      <module name="users-management" options="-parameters" />
+    </option>
+  </component>
+</project>
