@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/backend/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/backend/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/backend/feedback-service/feedback-service.iml" filepath="$PROJECT_DIR$/backend/feedback-service/feedback-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/backend/gateway/gateway.iml" filepath="$PROJECT_DIR$/backend/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/message-service/message-service.iml" filepath="$PROJECT_DIR$/backend/message-service/message-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/backend/parent-service/parent-service.iml" filepath="$PROJECT_DIR$/backend/parent-service/parent-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/backend/user-management/users-management.iml" filepath="$PROJECT_DIR$/backend/user-management/users-management.iml" />
     </modules>

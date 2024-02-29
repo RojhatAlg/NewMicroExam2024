@@ -1,7 +1,7 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eureka-server:8761/eureka/
 
 logging:
   level:
@@ -10,8 +10,7 @@ logging:
         discovery:
           shared:
             resolver:
-              aws:
-                ConfigClusterResolver: WARN
+              aws: WARN
     gateway:
       filters:
         JwtAuthFilter: INFO
@@ -34,11 +33,23 @@ spring:
 
   cloud:
     gateway:
+      globalcors:
+        cors-configurations:
+          '[/]':
+            allowedOrigins: "http://localhost:3000/"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            allowedHeaders: "*"
+            allowCredentials: false
+
       routes:
         - id: user-management
           predicates:
             - Path=/api/users/**
-          uri: lb://USER-MANAGEMENT
+          uri: lb://USERS-MANAGEMENT
 
         - id: parent-service
           predicates:
@@ -54,3 +65,8 @@ spring:
           predicates:
             - Path=/api/feedbacks/**
           uri: lb://FEEDBACK-SERVICE
+
+        - id: message-service
+          predicates:
+            - Path=/api/messages/**
+          uri: lb://MESSAGE-SERVICE

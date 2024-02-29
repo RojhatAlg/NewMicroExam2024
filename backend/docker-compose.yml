@@ -136,6 +136,23 @@ services:
       - rabbitmq
       - eureka-server
 
+  message-service:
+    container_name: message-service
+    build:
+      context: ./message-service
+      dockerfile: Dockerfile
+    ports:
+      - "1919:1919"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_RABBITMQ_HOST: rabbitmq
+    networks:
+      - micro
+    depends_on:
+      - postgres
+      - rabbitmq
+      - eureka-server
+
   frontend:
     image: frontend
     build:
@@ -147,6 +164,8 @@ services:
       - micro
 
 networks:
+  postgres:
+    driver: bridgeneclient
   micro:
     driver: bridge
 
