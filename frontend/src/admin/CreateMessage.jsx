@@ -19,8 +19,8 @@ function MessageForm({ onSubmit }) {
             });
             if (response.ok) {
                 console.log('Message sent successfully');
-                onSubmit(); // Call the onSubmit function passed from props
-                setMessage(''); // Clear the message input
+                onSubmit();
+                setMessage('');
             } else {
                 console.error('Failed to send message:', response.statusText);
             }

@@ -8,6 +8,7 @@ import ListChildren from "./component/ListChildren";
 import Login from "./component/Login";
 import HomePage from "./component/HomePage";
 import Signup from "./component/Signup";
+import ListFeedbacks from "./admin/ListFeedbacks";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Routes> {/* Use Routes instead of routes */}
                     <Route path="/screen/navigation-bar" element={<NavigationBar />} />
                     <Route path="/admin/Message" element={<Message/>} />
+                    <Route path="/admin/feedbacks" element={<ListFeedbacks/>} />
                     <Route path="/login" element={<Login/>} />
                     <Route path="/" element={<HomePage/>} />
                     <Route path="/signUp" element={<Signup/>} />

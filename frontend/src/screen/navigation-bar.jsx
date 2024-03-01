@@ -32,6 +32,9 @@ function Navigation() {
                                 <Link to="/admin/Message">
                                     <FaInbox /> Send messages to all parents
                                 </Link>
+                                <Link to="/admin/feedbacks">
+                                    <FaInbox /> See feedbacks from parents
+                                </Link>
                                 <button onClick={logOutHandler} className="logout-btn">
                                     Logout
                                 </button>
